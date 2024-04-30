@@ -1,0 +1,16 @@
+<div class="d-block d-lg-none">
+  <app-navbar (isSideBarOpen)="onClickSmallScreens($event)"></app-navbar>
+</div>
+<aside
+  [ngClass]="{ show: isSideBarOpen, hide: !isSideBarOpen }"
+  class="border-right-color bg-white"
+>
+  <div class="overflow-hidden sideBarContent">
+    <app-sidebar (isSideBarOpen)="onClickSmallScreens($event)"></app-sidebar>
+  </div>
+</aside>
+<main class="ms-200" (click)="onCloseSideBarClick()">
+  <div>
+    <router-outlet></router-outlet>
+  </div>
+</main>

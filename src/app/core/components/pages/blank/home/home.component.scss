@@ -1,0 +1,76 @@
+$main-color: #00d49f;
+
+section {
+  background-image: url("/assets/code.svg");
+  min-height: 100vh;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 50% 50%;
+}
+
+.things {
+  background-color: $main-color;
+}
+
+.Differecne {
+  position: relative;
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    height: 5px;
+    width: 100%;
+    background-color: $main-color;
+  }
+}
+
+.love {
+  opacity: 0;
+  animation: love forwards 0.5s;
+}
+@keyframes love {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.things {
+  opacity: 0;
+  animation: things forwards 1s;
+}
+@keyframes things {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.that {
+  opacity: 0;
+  animation: that forwards 1.2s;
+}
+@keyframes that {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.Differecne {
+  opacity: 0;
+  animation: Differecne forwards 1.5s;
+}
+@keyframes Differecne {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

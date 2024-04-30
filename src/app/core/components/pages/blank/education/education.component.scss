@@ -1,0 +1,11 @@
+.AlexUni {
+  a {
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    transition: 0.3s;
+    padding-right: 3px;
+    &:hover {
+      border-bottom: 1px solid #198754;
+    }
+  }
+}

@@ -1,1 +1,47 @@
 /* You can add global styles to this file, and also import other style files */
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Permanent+Marker&display=swap");
+
+$main-font: "Caveat", cursive;
+$heading-font: "Permanent Marker", cursive;
+
+$main-color: #8f7430;
+$second-Color: #acacac;
+
+// Global
+body,
+html {
+  background-image: url("./assets/bg.png");
+  background-repeat: repeat;
+  font-family: "Open Sans", sans-serif;
+}
+
+// text Color
+.text-main-Gold {
+  color: $main-color;
+}
+.text-main-secondary {
+  color: $second-Color;
+}
+
+// Fonts
+.main-font {
+  font-family: $main-font;
+}
+.heading-font {
+  font-family: $heading-font;
+}
+// Border
+.border-right-color {
+  border-right: $main-color 1px solid;
+}
+.main-border-color {
+  border-color: $main-color;
+}
+
+// background
+
+.bg-main-gold {
+  background-color: $main-color;
+}

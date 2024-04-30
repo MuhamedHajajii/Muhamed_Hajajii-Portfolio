@@ -1,0 +1,42 @@
+:host {
+  min-height: 100vh;
+}
+main {
+  min-height: 100vh;
+  flex: 1;
+}
+aside {
+  // Box Model
+  width: 200px;
+  // Layout
+  flex: 2;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  // other
+  transition: 0.5s;
+  z-index: 999;
+}
+
+@media screen and (min-width: 992px) {
+  .ms-200 {
+    margin-left: 200px;
+  }
+}
+@media screen and (max-width: 992px) {
+  main {
+    min-height: calc(100vh - 49.6px);
+    margin-top: 49.5px;
+  }
+  aside {
+    left: -200px;
+    top: 49.6px;
+  }
+  aside.show {
+    left: 0;
+  }
+  aside.hide {
+    left: -200px;
+  }
+}

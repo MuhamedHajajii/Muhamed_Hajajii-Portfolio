@@ -1,0 +1,58 @@
+<h2 class="main-font text-center py-1 py-md-5">Hello !</h2>
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <div class="text-editor-wrap">
+        <div class="title-bar">
+          <span class="title"
+            >Muahmed Hajajii.js — bash — 80x<span class="terminal-height"
+              >10</span
+            ></span
+          >
+        </div>
+        <div class="row text-body">
+          <div class="col-12 col-md-4 d-none d-md-block">
+            <div class="text-center">
+              <img
+                class="w-100 rounded-2"
+                src="./assets/1.jpg"
+                alt="Muhamed Hajajii image"
+              />
+            </div>
+          </div>
+          <div class="col-12 col-md-8 d-flex">
+            <p class="display-6">
+              <ngx-typed2
+                class="text-white"
+                [strings]="[
+                  '$ I\'m Muhamed Hajajii Frontend Developer using Angular 2+ framework, Let\'s Know more .....'
+                ]"
+                [typeSpeed]="50"
+                [loop]="false"
+                [showCursor]="false"
+                cursorChar="|"
+                [startDelay]="1500"
+                [fadeOut]=""
+                [autoInsertCss]="true"
+                (onCompleteEvent)="onTypingCompletedAdd()"
+              ></ngx-typed2>
+            </p>
+            <span class="typed-cursor">|</span>
+          </div>
+        </div>
+      </div>
+      <div
+        [ngClass]="{
+          openPortBtnDisplay: isTypeingCompleted,
+          'd-none': !isTypeingCompleted
+        }"
+        class="d-flex openPortBtn justify-content-center align-items-end"
+      >
+        <img width="100" src="./assets/hand-drawn-arrow-1.png" alt="" />
+        <button routerLink="home" class="btn fs-1 main-font">
+          Click Here <i class="ps-2 fa-solid fa-ghost"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>

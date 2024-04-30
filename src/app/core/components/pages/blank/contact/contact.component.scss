@@ -1,0 +1,133 @@
+.socialIcons {
+  background-color: #795548;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  font-size: 28px;
+  text-decoration: none;
+}
+
+.socialLink {
+  border-bottom: 4px solid transparent;
+  &:hover {
+    border-bottom: 4px solid #198754;
+  }
+}
+
+.fa-envelope:hover {
+  &::after {
+    transform: scale(1);
+  }
+}
+.fa-envelope {
+  position: relative;
+  &::after {
+    content: "Email";
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 40px;
+    text-wrap: nowrap;
+    position: absolute;
+    width: 200%;
+    height: 100%;
+    background: #000;
+    bottom: 100%;
+    left: -50%;
+    border-radius: 15px;
+    transform: scale(0);
+    transform-origin: bottom center;
+    transition: 0.3s;
+    font-size: 16px;
+  }
+}
+.fa-github:hover {
+  &::after {
+    transform: scale(1);
+  }
+}
+.fa-github {
+  position: relative;
+  &::after {
+    content: "Repo";
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 40px;
+    text-wrap: nowrap;
+    position: absolute;
+    width: 200%;
+    height: 100%;
+    background: #000;
+    bottom: 100%;
+    left: -50%;
+    border-radius: 15px;
+    transform: scale(0);
+    transform-origin: bottom center;
+    transition: 0.3s;
+    font-size: 16px;
+  }
+}
+.fa-linkedin:hover {
+  &::after {
+    transform: scale(1);
+  }
+}
+.fa-linkedin {
+  position: relative;
+  &::after {
+    content: "linked";
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 40px;
+    text-wrap: nowrap;
+    position: absolute;
+    width: 200%;
+    height: 100%;
+    background: #000;
+    bottom: 100%;
+    left: -50%;
+    border-radius: 15px;
+    transform: scale(0);
+    transform-origin: bottom center;
+    transition: 0.3s;
+    font-size: 16px;
+  }
+}
+.fa-whatsapp:hover {
+  &::after {
+    transform: scale(1);
+  }
+}
+.fa-whatsapp {
+  position: relative;
+  &::after {
+    content: "App";
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 40px;
+    text-wrap: nowrap;
+    position: absolute;
+    width: 300%;
+    height: 100%;
+    background: #000;
+    bottom: 100%;
+    left: -50%;
+    border-radius: 15px;
+    transform: scale(0);
+    transform-origin: bottom center;
+    transition: 0.3s;
+    font-size: 16px;
+  }
+}
