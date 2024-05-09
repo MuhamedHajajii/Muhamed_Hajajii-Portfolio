@@ -27,6 +27,7 @@
     "ng2-pdf-viewer": "^10.0.0",
     "ngx-extended-pdf-viewer": "^20.0.1",
     "ngx-typed2": "^1.0.0",
+    "papercss": "^1.9.2",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.14.3"

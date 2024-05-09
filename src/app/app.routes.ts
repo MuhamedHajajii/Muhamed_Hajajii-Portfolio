@@ -25,7 +25,7 @@ export const routes: Routes = [
         title: 'Muhamed Hajajii - Portfolio',
       },
       {
-        path: 'About',
+        path: 'about',
         loadComponent: () =>
           import('./core/components/pages/blank/about/about.component').then(
             (c) => c.AboutComponent
@@ -33,7 +33,7 @@ export const routes: Routes = [
         title: 'Muhamed Hajajii - About',
       },
       {
-        path: 'Experience',
+        path: 'experience',
         loadComponent: () =>
           import(
             './core/components/pages/blank/experience/experience.component'
@@ -41,7 +41,7 @@ export const routes: Routes = [
         title: 'Muhamed Hajajii - Experience',
       },
       {
-        path: 'Projects',
+        path: 'projects',
         loadComponent: () =>
           import(
             './core/components/pages/blank/projects/projects.component'
@@ -49,7 +49,7 @@ export const routes: Routes = [
         title: 'Muhamed Hajajii - Projects',
       },
       {
-        path: 'Skills',
+        path: 'skills',
         loadComponent: () =>
           import('./core/components/pages/blank/skills/skills.component').then(
             (c) => c.SkillsComponent
@@ -57,7 +57,7 @@ export const routes: Routes = [
         title: 'Muhamed Hajajii - Skills',
       },
       {
-        path: 'Education',
+        path: 'education',
         loadComponent: () =>
           import(
             './core/components/pages/blank/education/education.component'
@@ -65,7 +65,7 @@ export const routes: Routes = [
         title: 'Muhamed Hajajii - Education',
       },
       {
-        path: 'Contact',
+        path: 'contact',
         loadComponent: () =>
           import(
             './core/components/pages/blank/contact/contact.component'
@@ -73,7 +73,7 @@ export const routes: Routes = [
         title: 'Muhamed Hajajii - Contact',
       },
       {
-        path: 'Blog',
+        path: 'blog',
         loadComponent: () =>
           import('./core/components/pages/blank/blog/blog.component').then(
             (c) => c.BlogComponent
@@ -81,7 +81,7 @@ export const routes: Routes = [
         title: 'Muhamed Hajajii - Blog',
       },
       {
-        path: 'Resume',
+        path: 'resume',
         loadComponent: () =>
           import('./core/components/pages/blank/resume/resume.component').then(
             (c) => c.ResumeComponent
