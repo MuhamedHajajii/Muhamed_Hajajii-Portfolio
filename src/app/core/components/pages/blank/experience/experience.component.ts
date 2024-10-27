@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { ExperienceService } from '../../../../Services/experience.service';
 
 @Component({
   selector: 'app-experience',
@@ -8,5 +9,7 @@ import { Component } from '@angular/core';
   styleUrl: './experience.component.scss'
 })
 export class ExperienceComponent {
-
+constructor(public _ExperienceService:ExperienceService) {
+  
+}
 }

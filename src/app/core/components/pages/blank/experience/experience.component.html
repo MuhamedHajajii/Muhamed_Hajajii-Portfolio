@@ -3,6 +3,7 @@
     <h2 class="p-2 py-4 text-bg-success fw-light text-uppercase">Experience</h2>
   </div>
   <div class="container">
+    @for (item of _ExperienceService.getAllExperiences(); track $index) {
     <div class="card my-4 shadow">
       <div
         class="card-header d-flex justify-content-between align-items-center"
@@ -12,39 +13,56 @@
             <img
               width="35"
               class="rounded-circle"
-              src="./assets/Vc Software.jpg"
-              alt="Vc Software company logo"
+              [src]="item.Company__Image"
+              [alt]="item.Company__Image__Alt"
             />
           </div>
-          <p class="m-0 ps-3">VC Software Agency</p>
-        </div>
-        <p class="m-0">Junior Front End Developer</p>
-      </div>
-      <div class="card-body">
-        <div class="d-flex">
-          <p class="fw-bold text-nowrap pe-2">Remotely :</p>
-          <p class="fst-italic">
-            <span class="fw-bold"></span> contributing with team by thdaily and
-            weekly meeting share ideas and make work more stable while working
-            with standers:
+          <p class="m-0 ps-3">
+            <a
+              class="text-secondary"
+              [href]="
+                item.Company__Website.length > 0 ? item.Company__Website : ''
+              "
+              target="_blank"
+              >{{ item.Company__Name }}
+            </a>
           </p>
         </div>
-        <div class="d-flex">
-          <p class="fw-bold text-nowrap pe-2">Responsibilities :</p>
-          <ul>
-            <li>Angular 17</li>
-            <li>Git&Github</li>
-            <li>HTML5 semantic elements</li>
-            <li>SCSS architecture</li>
-            <li>TypeScript design patterns</li>
-            <li>solid principles</li>
-            <li>Typedocs</li>
+        <p class="m-0 fw-bold">{{ item.Jop__Title }}</p>
+      </div>
+      <div class="card-body">
+        <div class="row">
+          <p class="col-12 col-md-3 col-lg-2 fw-bold text-nowrap pe-2">
+            {{ item.Jop__Type }} :
+          </p>
+          <p class="col-12 col-md-9 col-lg-10 fst-italic">
+            {{ item.Jop__Desc }}
+          </p>
+        </div>
+        <div class="row">
+          <p class="col-12 col-md-3 col-lg-2 fw-bold text-nowrap pe-2">
+            Responsibilities
+          </p>
+          <ul class="col-12 col-md-9 col-lg-10 ps-5">
+            @for (item of item.Repsonsibilites; track $index) {
+            <li class="mb-2">{{ item }}</li>
+            }
           </ul>
         </div>
+        <div class="mt-2 fw-semibold text-success-emphasis text-center mx-auto">
+          <p>
+            <i class="fa-solid fa-quote-left"></i> {{ item.EndMessage }}
+            <i class="fa-solid fa-quote-right"></i>
+          </p>
+        </div>
       </div>
-      <div class="card-footer">March 2024 - Present</div>
+      <div class="card-footer">
+        {{ item.Start__Date }} - {{ item.End__Date }}
+      </div>
     </div>
-    <div class="card my-4 shadow">
+    }
+
+    <!-- <div class="card my-4 shadow">
       <div
         class="card-header d-flex justify-content-between align-items-center"
       >
@@ -178,6 +196,6 @@
         </ul>
       </div>
       <div class="card-footer">Aug 2019 - Dec 2021</div>
-    </div>
+    </div> -->
   </div>
 </section>

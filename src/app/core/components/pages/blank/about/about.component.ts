@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { AboutService } from '../../../../Services/about.service';
 
 @Component({
   selector: 'app-about',
@@ -10,4 +11,6 @@ import { Component } from '@angular/core';
     '/node_modules/papercss/dist/paper.min.css',
   ],
 })
-export class AboutComponent {}
+export class AboutComponent {
+  constructor(public _AboutService:AboutService){}
+}

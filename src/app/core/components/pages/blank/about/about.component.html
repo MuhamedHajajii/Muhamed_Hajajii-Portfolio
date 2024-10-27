@@ -5,68 +5,56 @@
       class="mx-3 py-4 fw-semibold fs-5 h-100 d-flex flex-column justify-content-between"
     >
       <h3 class="text-main-Gold">
-        - Frontend developer with a passion for UI design, collaboration, and
-        teaching.
+        {{ _AboutService.getAboutDetails().title }}
       </h3>
       <p>
         I'm
         <span class="fw-bolder text-main-Gold">Muhamed Hajajii</span>
-        , I enjoy solving complex problems and learning new skills. I am
-        passionate about creating high-quality code that follows best practices
-        and industry standards. I am always looking for new challenges and
-        opportunities to grow as a developer.
+        , {{ _AboutService.getAboutDetails().description[0] }}
       </p>
       <p>
-        I originally majored in business administration specializing in Finance,
-        but I had a deep interest in software development. After graduation.
-        seeing how the world is moving towards digital transformation thought to
-        myself, I really want to be an effective part of this evolution, and
-        with a background in sales, marketing, public relations , Finance, I
-        always prefer to learning and increasing my understanding and my
-        practical and intellectual experience, Furthermore. I always work on my
-        skills aiming to never stop learning, growing and stepping into new
-        opportunities and challenges. I usually spend my time wondering what the
-        next thing I can challenge myself to do could be.
+        {{ _AboutService.getAboutDetails().description[1] }}
       </p>
       <div>
-        <p class="row">
-          <span class="col-2">Birth</span><span class="col-1">:</span> 22-8-1999
+        <p class="row my-3">
+          <span class="col-2 bg-body-secondary">Birth</span
+          ><span class="col-1">:</span>
+          {{ _AboutService.getAboutDetails().about.Birth }}
         </p>
         <p class="row">
-          <span class="col-2">Age</span><span class="col-1">:</span> 24 years
+          <span class="col-2 bg-body-secondary">Age</span
+          ><span class="col-1">:</span>
+          {{ _AboutService.getMyCurrentAge() }} years
         </p>
         <p class="row">
-          <span class="col-2">Address</span
-          ><span class="col-1">:</span> Alexandria / Egypt
+          <span class="col-2 bg-body-secondary">Address</span
+          ><span class="col-1">:</span>
+          {{ _AboutService.getAboutDetails().about.Address }}
         </p>
         <p class="row">
-          <span class="col-2">Military</span
-          ><span class="col-1">:</span> exempted from military service
+          <span class="col-2 bg-body-secondary">Military</span
+          ><span class="col-1">:</span>
+          {{ _AboutService.getAboutDetails().about.Military }}
         </p>
       </div>
-      <div class="d-flex fs-4 flex-wrap">
-        <p class="m-0 pe-4">Current Focus:</p>
-        <a
-          class="text-success fw-light text-decoration-none"
-          href="https://dotnet.microsoft.com/en-us/apps/aspnet"
-          target="blank"
-          >ASP.NET Core</a
-        >
-        <span class="px-3">//</span>
-        <a
-          class="text-success fw-light text-decoration-none"
-          href="https://react.dev/"
-          target="blank"
-          >React</a
-        >
-        <span class="px-3">//</span>
-        <a
-          class="text-success fw-light text-decoration-none"
-          href="https://wordpress.com/"
-          target="blank"
-          >WordPress</a
-        >
+      <div class="d-flex fs-4">
+        <p class="m-0 pe-4 text-nowrap bg-body-secondary">Current Focus</p>
+        <div class="d-flex fs-4 flex-wrap">
+          @for (item of _AboutService.getAboutDetails().currentFoucs; track
+          $index) {
+          <span class="px-3">//</span>
+          <a
+            class="text-success fw-light text-decoration-none"
+            [href]="item.link"
+            target="blank"
+            >{{ item.name }}</a
+          >
+          }
+        </div>
       </div>
+      <p>
+        {{ _AboutService.getAboutDetails().endMessage }}
+      </p>
     </div>
   </div>
 </section>
