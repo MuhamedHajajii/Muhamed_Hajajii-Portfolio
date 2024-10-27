@@ -2,13 +2,19 @@
   <div>
     <h2 class="p-2 py-4 text-bg-success fw-light text-uppercase">Experience</h2>
   </div>
-  <div class="container">
+  <div class="container" id="accordionExample">
     @for (item of _ExperienceService.getAllExperiences(); track $index) {
     <div class="card my-4 shadow">
       <div
         class="card-header d-flex justify-content-between align-items-center"
+        type="button"
+        data-bs-toggle="collapse"
+        [attr.data-bs-target]="'#' + item.Company__Name.split(' ')[0]"
+        aria-expanded="false"
+        [attr.aria-controls]="item.Company__Name.split(' ')[0]"
       >
         <div class="d-flex align-items-center justify-content-center">
+          <i class="fa-solid fa-arrow-down-wide-short me-3"></i>
           <div>
             <img
               width="35"
@@ -28,9 +34,15 @@
             </a>
           </p>
         </div>
+
         <p class="m-0 fw-bold">{{ item.Jop__Title }}</p>
       </div>
-      <div class="card-body">
+      <div
+        [id]="item.Company__Name.split(' ')[0]"
+        class="card-body accordion-collapse collapse"
+        data-bs-parent="#accordionExample"
+        [ngClass]="{ show: $index == 0 }"
+      >
         <div class="row">
           <p class="col-12 col-md-3 col-lg-2 fw-bold text-nowrap pe-2">
             {{ item.Jop__Type }} :
