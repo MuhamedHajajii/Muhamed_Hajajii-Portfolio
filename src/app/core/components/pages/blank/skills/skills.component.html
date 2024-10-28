@@ -6,171 +6,31 @@
     <div class="col-12 col-lg-6 py-3 px-5">
       <div class="bg-white p-5 shadow h-100">
         <h3 class="text-success border-bottom">Professional Skills</h3>
-        <div class="toolsIcons d-flex flex-wrap">
-          <div>
-            <img
-              class="w-100"
-              src="/assets/tools logo/0-angular.svg"
-              alt="angular logo"
-            />
+        <div
+          class="toolsIcons d-flex flex-wrap align-items-start justify-content-center"
+        >
+          @for (item of _SkillsService.getAllSkills().professional__Skills;
+          track $index) {
+          <div class="text-center my-4 mx-4">
+            <img class="w-100" [src]="item.Image" [alt]="item.Name + 'logo'" />
+            <p class="fw-bold mt-2">{{ item.Name }}</p>
           </div>
-          <div>
-            <img
-              class="w-100"
-              src="/assets/tools logo/react.png"
-              alt="react logo"
-            />
-          </div>
-          <div>
-            <img
-              class="w-100"
-              src="/assets/tools logo/csharp.png"
-              alt="csharp logo"
-            />
-          </div>
-          <div>
-            <img
-              class="w-100"
-              src="/assets/tools logo/NET_Core_Logo.svg.png"
-              alt="NET logo"
-            />
-          </div>
-          <div>
-            <img
-              class="w-100"
-              src="/assets/tools logo/csharp.png"
-              alt="csharp logo"
-            />
-          </div>
-          <div>
-            <img
-              class="w-100"
-              src="/assets/tools logo/sql.png"
-              alt="sql logo"
-            />
-          </div>
-          <div>
-            <img
-              class="w-100"
-              src="/assets/tools logo/tailwind.png"
-              alt="tailwind logo"
-            />
-          </div>
-          <div>
-            <img
-              class="w-100"
-              src="/assets/tools logo/1-html5.svg"
-              alt="html5 logo"
-            />
-          </div>
-          <div>
-            <img
-              class="w-100"
-              src="/assets/tools logo/2-css3.svg"
-              alt="css3 logo"
-            />
-          </div>
-          <div>
-            <img
-              class="w-100"
-              src="/assets/tools logo/3-bootstrap.svg"
-              alt="bootstrap logo"
-            />
-          </div>
-          <div>
-            <img
-              class="w-100"
-              src="/assets/tools logo/4-sass.svg"
-              alt="sass logo"
-            />
-          </div>
-          <div>
-            <img
-              class="w-100"
-              src="/assets/tools logo/5-jquery.svg"
-              alt="jquery logo"
-            />
-          </div>
-          <div>
-            <img
-              class="w-100"
-              src="/assets/tools logo/6-javascript.svg"
-              alt="javascript logo"
-            />
-          </div>
-          <div>
-            <img
-              class="w-100"
-              src="/assets/tools logo/7-typescript.svg"
-              alt="typescript angular"
-            />
-          </div>
-          <div>
-            <img
-              class="w-100"
-              src="/assets/tools logo/8-firebase.svg"
-              alt="firebase logo"
-            />
-          </div>
+          }
         </div>
       </div>
     </div>
     <div class="col-12 col-lg-6 py-3 px-5">
       <div class="bg-white p-5 shadow h-100">
         <h3 class="text-success border-bottom">Tools</h3>
-        <div class="toolsIcons d-flex flex-wrap">
-          <div>
-            <img
-              class="w-100"
-              src="/assets/tools logo/vscode.svg"
-              alt="vscode logo"
-            />
+        <div
+          class="toolsIcons d-flex flex-wrap align-items-start justify-content-center"
+        >
+          @for (item of _SkillsService.getAllSkills().Tools; track $index) {
+          <div class="text-center my-5 mx-4">
+            <img class="w-100" [src]="item.Image" [alt]="item.Name + 'logo'" />
+            <p class="fw-bold mt-2">{{ item.Name }}</p>
           </div>
-          <div>
-            <img
-              class="w-100"
-              src="/assets/tools logo/vusaul.png"
-              alt="vusaul logo"
-            />
-          </div>
-          <div>
-            <img class="w-100" src="/assets/tools logo/git.svg" alt="git svg" />
-          </div>
-          <div>
-            <img
-              class="w-100"
-              src="/assets/tools logo/github.svg"
-              alt="github logo"
-            />
-          </div>
-          <div>
-            <img
-              class="w-100"
-              src="/assets/tools logo/notion.svg"
-              alt="notion logo"
-            />
-          </div>
-          <div>
-            <img
-              class="w-100"
-              src="/assets/tools logo/npm.svg"
-              alt="npm logo"
-            />
-          </div>
-          <div>
-            <img
-              class="w-100"
-              src="/assets/tools logo/postman.svg"
-              alt="postman logo"
-            />
-          </div>
-          <div>
-            <img
-              class="w-75"
-              src="/assets/tools logo/figma.svg"
-              alt="figma logo"
-            />
-          </div>
+          }
         </div>
       </div>
     </div>

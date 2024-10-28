@@ -6,6 +6,7 @@ import {
   Renderer2,
   ViewChildren,
 } from '@angular/core';
+import { ProjectsService } from '../../../../Services/projects.service';
 
 @Component({
   selector: 'app-projects',
@@ -15,11 +16,14 @@ import {
   styleUrl: './projects.component.scss',
 })
 export class ProjectsComponent {
-  constructor(private _Renderer2: Renderer2) {}
+  constructor(
+    private _Renderer2: Renderer2,
+    public _ProjectsService: ProjectsService
+  ) {}
 
   @ViewChildren('projLightBox') projLightBox!: QueryList<ElementRef>;
 
-  onProjectBannerClick(e: HTMLDivElement, event: Event): void {
+  onProjectBannerClick(e: any, event: Event): void {
     event.stopPropagation();
     e.classList.toggle('show');
     this.projLightBox.forEach((projLightBox: ElementRef) => {
@@ -32,7 +36,7 @@ export class ProjectsComponent {
     });
   }
 
-  onAllProjectBannerClick(e: HTMLDivElement): void {
+  onAllProjectBannerClick(e: any): void {
     this.projLightBox.forEach((projLightBox: ElementRef) => {
       if (projLightBox.nativeElement.children[0] != e) {
         this._Renderer2.removeClass(
