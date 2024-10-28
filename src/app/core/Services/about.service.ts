@@ -15,30 +15,30 @@ export class AboutService {
         'I graduated with a degree in Business Administration, specializing in Finance, but my interest in software development led me to pursue a career in tech. With experience in sales, marketing, public relations, and finance, I bring a diverse skill set to the table. My curiosity drives me to constantly learn, improve, and seek out new challenges in my professional journey.',
       ],
       about: {
-        Birth: 'Alexandria, Egypt',
-        Address: '22-8-1999',
+        Address: 'Alexandria, Egypt',
+        Birth: '22-8-1999',
         Military: 'Exempted from military service',
       },
       currentFoucs: [
         {
           name: 'ASP.NET Core',
-          link:"https://dotnet.microsoft.com/en-us/apps/aspnet"
+          link: 'https://dotnet.microsoft.com/en-us/apps/aspnet',
         },
         {
           name: 'React',
-          link:"https://react.dev/"
+          link: 'https://react.dev/',
         },
         {
           name: 'WordPress',
-          link:"https://wordpress.com/"
+          link: 'https://wordpress.com/',
         },
         {
           name: 'Node js',
-          link:"https://nodejs.org/en"
+          link: 'https://nodejs.org/en',
         },
         {
           name: 'UI UX Design',
-          link:"#"
+          link: '#',
         },
       ],
       endMessage:
