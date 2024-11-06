@@ -26,7 +26,7 @@ export class SkillsService {
       ],
       Tools: [
         { Image: 'assets/tools logo/vscode.svg', Name: 'VS Code' },
-        { Image: 'assets/tools logo/vusaul.png', Name: 'VS community' },
+        { Image: 'assets/tools logo/visual.png', Name: 'VS community' },
         { Image: 'assets/tools logo/git.svg', Name: 'Git' },
         { Image: 'assets/tools logo/github.svg', Name: 'Git Hub' },
         { Image: 'assets/tools logo/notion.svg', Name: 'Notion' },

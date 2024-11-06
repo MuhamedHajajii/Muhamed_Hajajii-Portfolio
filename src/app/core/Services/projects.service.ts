@@ -26,7 +26,7 @@ export class ProjectsService {
           Project__Repo: 'https://github.com/MuhamedHajajii/momentocafe',
           Project__Demo: 'https://www.momentomart.com/',
           Project__Technologies: [
-            'Online Delivry',
+            'Online Delivery',
             'Menu',
             'Google Drive',
             'Google Sheets',
@@ -90,7 +90,7 @@ export class ProjectsService {
           Project__Name: 'Yummy Recipes website',
           Project__image: 'assets/Yummy/Yummy.png',
           Project__Description:
-            'jQuery Js Apis and validition and many other topics',
+            'jQuery Js Apis and validation and many other topics',
           Project__Repo:
             'https://github.com/MuhamedHajajii/Yummy-Recipes-website',
           Project__Demo:
@@ -104,10 +104,10 @@ export class ProjectsService {
           ],
         },
         {
-          Project__Name: 'Egyption Party',
+          Project__Name: 'Egyptian Party',
           Project__image: 'assets/Party/Party.png',
           Project__Description:
-            'simple site test jquery methods and count down for spacific date and validation for letters in textarea',
+            'simple site test jquery methods and count down for specific date and validation for letters in textarea',
           Project__Repo: 'https://github.com/MuhamedHajajii/jQuery-site',
           Project__Demo: 'https://muhamedhajajii.github.io/jQuery-site/',
           Project__Technologies: [
@@ -125,7 +125,7 @@ export class ProjectsService {
           Project__Name: 'Games Site',
           Project__image: 'assets/Games/Games.png',
           Project__Description:
-            'design for game search and ads for weather application to visite with slider and drag swaper and some animation',
+            'design for game search and ads for weather application to visit with slider and drag swapper and some animation',
           Project__Repo: 'https://github.com/MuhamedHajajii/Games-Site',
           Project__Demo: 'https://muhamedhajajii.github.io/Games-Site/',
           Project__Technologies: ['HTML5', 'Css3', 'Bootstrap5', 'JavaScript'],
@@ -193,7 +193,7 @@ export class ProjectsService {
       HTMLCSS__Projects: [
         {
           Project__Name: 'DANIELS',
-          Project__image: './assetsDANIELSDANIELS.png',
+          Project__image: './assets/DANIELS/DANIELS.png',
           Project__Description: 'Portfolio Landing page with main Animation',
           Project__Repo: 'https://github.com/MuhamedHajajii/DANIELS',
           Project__Demo: 'https://muhamedhajajii.github.io/DANIELS/',

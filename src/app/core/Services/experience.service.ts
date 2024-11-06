@@ -12,7 +12,7 @@ export class ExperienceService {
         Company__Image__Alt: 'Route Academy',
         Company__Website: 'https://www.linkedin.com/company/routeacademy/',
         Company__Name: 'Route Academy',
-        Repsonsibilites: [
+        Responsibilities: [
           'Student Support: Assisted students in enhancing their web development skills, providing tailored guidance to foster their growth and confidence in coding.',
           'Code Reviews: Conducted thorough code reviews, offering constructive feedback to help students improve code quality and best practices.',
           'Mentorship: Mentored students in essential frontend technologies, including HTML, CSS, JavaScript, and frameworks such as Angular, ensuring a solid foundation in web development principles.',
@@ -32,7 +32,7 @@ export class ExperienceService {
         Company__Image__Alt: 'VC Software Agency',
         Company__Website: 'https://www.linkedin.com/in/muhamed-hajajii',
         Company__Name: 'VC Software Agency',
-        Repsonsibilites: [
+        Responsibilities: [
           'Angular Development: Implementing and maintaining high-performance features using Angular 17, ensuring responsiveness and efficiency across all devices.',
           'Documentation with JSDoc: Writing clear, consistent documentation using JSDoc to enhance code readability, maintainability, and ease of handoff for other developers.',
           'Team Collaboration: Participating in weekly and daily team meetings to sync progress, address blockers, and align on project goals, contributing to a collaborative and agile work environment.',
@@ -52,7 +52,7 @@ export class ExperienceService {
         Company__Image__Alt: 'Hyper Solutions web',
         Company__Website: 'https://www.facebook.com/Hyper.solutions0',
         Company__Name: 'Hyper Solutions',
-        Repsonsibilites: [
+        Responsibilities: [
           'Implementing Designs: Translated design files into clean, semantic HTML, CSS, and Bootstrap code, ensuring pixel-perfect accuracy and adherence to specifications.',
           'Responsive Development: Used Bootstrap to create layouts that adapt seamlessly across various devices, including desktops, tablets, and mobile screens.',
           'Code Optimization: Followed best practices in HTML and CSS to enhance performance, maintainability, and cross-browser compatibility.',
@@ -72,7 +72,7 @@ export class ExperienceService {
         Company__Image__Alt: 'Concoret for ReadyMix',
         Company__Website: 'https://www.concretorm.com/',
         Company__Name: 'Concoret ReadyMix',
-        Repsonsibilites: [
+        Responsibilities: [
           'Employee Relations: Facilitated communication between management and employees to foster a positive work environment and address workforce needs effectively.',
           'Recruitment and Onboarding: Managed recruitment efforts and oversaw the onboarding process for new employees, ensuring alignment with company culture and standards.',
           'Policy Implementation: Communicated HR policies related to compensation, benefits, and workplace safety, ensuring compliance across all assigned stations.',
@@ -92,7 +92,7 @@ export class ExperienceService {
         Company__Image__Alt: 'BorgMix for ReadyMix',
         Company__Website: 'https://www.facebook.com/borgmix.eg',
         Company__Name: 'BorgMix for ReadyMix',
-        Repsonsibilites: [
+        Responsibilities: [
           'Invoice Processing and Verification: Assembled, reviewed, and verified invoices and check requests, flagging any unusual items or discrepancies for prompt clarification',
           'Expense Management: Tracked expenses, processed expense reports, and maintained accurate records for efficient budget oversight and compliance.',
           'Account Analysis: Prepared account analyses, providing data-driven insights that aid in financial planning and budgeting.',
@@ -114,7 +114,7 @@ export class ExperienceService {
         Company__Image__Alt: 'Silver Town company',
         Company__Website: 'https://silvertown-eg.com/en',
         Company__Name: 'Silver Town',
-        Repsonsibilites: [
+        Responsibilities: [
           'Customer Assistance: Help customers locate items in the store, ensuring a positive shopping experience and promoting customer loyalty.',
           "Inventory Management: Checked stock levels at other branches and facilitated orders for requested items, ensuring availability for our customers' needs.",
           'Product Knowledge: Provided detailed information about products, assisting customers in making informed purchasing decisions.',

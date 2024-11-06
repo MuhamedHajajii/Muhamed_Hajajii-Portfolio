@@ -12,5 +12,6 @@ import { AboutService } from '../../../../Services/about.service';
   ],
 })
 export class AboutComponent {
-  constructor(public _AboutService:AboutService){}
+  constructor(public _AboutService: AboutService) {}
 }
+

@@ -1,6 +1,13 @@
 import { Routes } from '@angular/router';
 
 export const routes: Routes = [
+  /**
+   * Routing Logic depend on one scenario ==>>
+   * If The path is empty it will rout the user for the Hello Component
+   * Using this approach instead of using a named component
+   *  make share the website link url Easier in this way ==>> [https://www.muhamedhajajii.blog/] 
+   * instead of this [https://www.muhamedhajajii.blog/home]
+   */
   {
     path: '',
     loadComponent: () =>
@@ -9,6 +16,11 @@ export const routes: Routes = [
       ).then((c) => c.WelcomePageComponent),
     title: 'Muhamed Hajajii - Portfolio',
   },
+  /**
+   * Wrapping all the components inside a blank component 
+   * Make the navbar only appear within that component
+   * instead of making unnecessary if conditions
+   */
   {
     path: '',
     loadComponent: () =>
@@ -16,6 +28,7 @@ export const routes: Routes = [
         (c) => c.BlankComponent
       ),
     children: [
+      /** Home Component */
       {
         path: 'home',
         loadComponent: () =>
@@ -24,6 +37,7 @@ export const routes: Routes = [
           ),
         title: 'Muhamed Hajajii - Portfolio',
       },
+      /** About Component */
       {
         path: 'about',
         loadComponent: () =>
@@ -32,6 +46,7 @@ export const routes: Routes = [
           ),
         title: 'Muhamed Hajajii - About',
       },
+      /** Experience Component */
       {
         path: 'experience',
         loadComponent: () =>
@@ -40,6 +55,7 @@ export const routes: Routes = [
           ).then((c) => c.ExperienceComponent),
         title: 'Muhamed Hajajii - Experience',
       },
+      /** Projects Component */
       {
         path: 'projects',
         loadComponent: () =>
@@ -48,6 +64,7 @@ export const routes: Routes = [
           ).then((c) => c.ProjectsComponent),
         title: 'Muhamed Hajajii - Projects',
       },
+      /** Skills Component */
       {
         path: 'skills',
         loadComponent: () =>
@@ -56,6 +73,7 @@ export const routes: Routes = [
           ),
         title: 'Muhamed Hajajii - Skills',
       },
+      /** Education Component */
       {
         path: 'education',
         loadComponent: () =>
@@ -64,6 +82,7 @@ export const routes: Routes = [
           ).then((c) => c.EducationComponent),
         title: 'Muhamed Hajajii - Education',
       },
+      /** Contact Component */
       {
         path: 'contact',
         loadComponent: () =>
@@ -72,6 +91,7 @@ export const routes: Routes = [
           ).then((c) => c.ContactComponent),
         title: 'Muhamed Hajajii - Contact',
       },
+      /** Blog Component */
       {
         path: 'blog',
         loadComponent: () =>
@@ -80,6 +100,7 @@ export const routes: Routes = [
           ),
         title: 'Muhamed Hajajii - Blog',
       },
+      /** Resume Component */
       {
         path: 'resume',
         loadComponent: () =>
@@ -91,6 +112,9 @@ export const routes: Routes = [
     ],
   },
 
+  /**
+   * Not Found Component
+   */
   {
     path: '**',
     loadComponent: () =>

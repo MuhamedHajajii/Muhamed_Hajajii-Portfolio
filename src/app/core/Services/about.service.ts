@@ -6,6 +6,10 @@ import { Injectable } from '@angular/core';
 export class AboutService {
   constructor() {}
 
+  /**
+   * 
+   * @returns Object Includes all the about details
+   */
   getAboutDetails() {
     return {
       title:
@@ -19,7 +23,7 @@ export class AboutService {
         Birth: '22-8-1999',
         Military: 'Exempted from military service',
       },
-      currentFoucs: [
+      currentFocus: [
         {
           name: 'ASP.NET Core',
           link: 'https://dotnet.microsoft.com/en-us/apps/aspnet',
@@ -45,6 +49,9 @@ export class AboutService {
         'I look forward to connecting and collaborating with others in the tech space!',
     };
   }
+  /**
+   * To represent my age and make it up to date
+   */
   getMyCurrentAge() {
     let d = new Date('8-22-1999');
     let nowD = new Date();
